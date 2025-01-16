@@ -1,4 +1,4 @@
-import { Webhook } from 'lucide-react';
+import { Webhook, BookText, ArrowRightLeft } from 'lucide-react';
 import {
   Sidebar,
   SidebarContent,
@@ -21,7 +21,12 @@ const items = [
   {
     title: `useTransition`,
     url: '/use-transition',
-    icon: Webhook,
+    icon: ArrowRightLeft,
+  },
+  {
+    title: `useFormStatus & useActionState`,
+    url: '/use-form-status',
+    icon: BookText,
   },
 ];
 
