@@ -1,10 +1,7 @@
-function App() {
+import { Layout } from 'lucide-react';
 
-  return (
-    <div className="w-full bg-red-50">
-      test
-    </div>
-  )
+function App() {
+  return <Layout />;
 }
 
-export default App
+export default App;
