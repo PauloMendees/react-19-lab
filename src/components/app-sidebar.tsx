@@ -1,4 +1,4 @@
-import { Webhook, BookText, ArrowRightLeft } from 'lucide-react';
+import { Webhook, BookText, ArrowRightLeft, GitPullRequestCreateArrow } from 'lucide-react';
 import {
   Sidebar,
   SidebarContent,
@@ -27,6 +27,11 @@ const items = [
     title: `useFormStatus & useActionState`,
     url: '/use-form-status',
     icon: BookText,
+  },
+  {
+    title: 'useOptimistic',
+    url: '/use-optimistic',
+    icon: GitPullRequestCreateArrow,
   },
 ];
 

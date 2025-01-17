@@ -2,7 +2,7 @@ import { PageLayout } from '@/components/page-layout';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { act, useActionState } from 'react';
+import { useActionState } from 'react';
 import { useFormStatus } from 'react-dom';
 
 const action = async () =>
@@ -21,8 +21,7 @@ const SubmitButton = () => {
 };
 
 export const UseFormStatusPage = () => {
-  const onSubmit = async (state?: { error: boolean; data: Array<any> }) => {
-    console.log(state);
+  const onSubmit = async () => {
     try {
       await action();
       return {
@@ -35,7 +34,6 @@ export const UseFormStatusPage = () => {
         data: [],
       };
     }
-    return;
   };
 
   const [data, submitAction, isPending] = useActionState(onSubmit, {

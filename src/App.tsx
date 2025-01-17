@@ -4,6 +4,7 @@ import { Suspense } from 'react';
 import { UsePage } from './pages/use';
 import { UseTransitionPage } from './pages/use-transition';
 import { UseFormStatusPage } from './pages/use-form-status';
+import { UseOptimisticPage } from './pages/use-optimistic';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/*" element={<UsePage />} />
             <Route path="/use-transition" element={<UseTransitionPage />} />
             <Route path="/use-form-status" element={<UseFormStatusPage />} />
+            <Route path="/use-optimistic" element={<UseOptimisticPage />} />
           </Routes>
         </AppLayout>
       </BrowserRouter>

@@ -13,7 +13,7 @@ export const UseTransitionPage = () => {
 
   return (
     <PageLayout title={`"useTransition" Showcase`}>
-      <p>{`The "useTransition" hook allows the user to create a pendint state, which waits for a function to finish.`}</p>
+      <p>{`The "useTransition" hook allows the user to create a pending state, which waits for a function to finish.`}</p>
       <Card className="p-4 w-full">
         <div className="w-full flex items-center gap-4">
           <span>
