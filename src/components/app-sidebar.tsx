@@ -1,4 +1,4 @@
-import { Webhook, BookText, ArrowRightLeft, GitPullRequestCreateArrow } from 'lucide-react';
+import { Webhook, BookText, ArrowRightLeft, GitPullRequestCreateArrow, TvMinimalPlay } from 'lucide-react';
 import {
   Sidebar,
   SidebarContent,
@@ -32,6 +32,11 @@ const items = [
     title: 'useOptimistic',
     url: '/use-optimistic',
     icon: GitPullRequestCreateArrow,
+  },
+  {
+    title: 'Player',
+    url: '/player',
+    icon: TvMinimalPlay,
   },
 ];
 
