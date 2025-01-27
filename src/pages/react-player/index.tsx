@@ -23,9 +23,8 @@ export const ReactPlayerPage = () => {
           onPause={() => console.log('Pause')}
           onPlay={() => console.log('Play')}
           onProgress={(state) => console.log(state)}
-          progressInterval={2000}
+          progressInterval={500}
           onSeek={(seconds) => console.log(`Seeked to: ${seconds}`)}
-          initialTime={2}
         />
       </Suspense>
     </PageLayout>
