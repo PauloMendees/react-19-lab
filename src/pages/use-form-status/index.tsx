@@ -47,8 +47,8 @@ export const UseFormStatusPage = () => {
 
       <Card className="p-4 max-w-[350px] w-full">
         <form action={submitAction} className="flex flex-col gap-4 w-full">
-          <Input className="w-full" value={'paulo.h.mendes25@gmail.com'} />
-          <Input className="w-full" value={'12345678'} type="password" />
+          <Input className="w-full" value={'paulo.h.mendes25@gmail.com'} onChange={() => {}} />
+          <Input className="w-full" value={'12345678'} onChange={() => {}} type="password" />
           <SubmitButton />
           <p>useActionState hook pending state: {isPending ? 'true' : 'false'}</p>
           <p>{JSON.stringify(data)}</p>
