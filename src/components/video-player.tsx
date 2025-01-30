@@ -10,6 +10,7 @@ interface VideoPlayerProps {
   initialTime?: number;
   progressInterval?: number;
   onSeek?: (seconds: number) => void;
+  src: string;
 }
 
 export const VideoPlayer: FC<VideoPlayerProps> = ({
@@ -19,6 +20,7 @@ export const VideoPlayer: FC<VideoPlayerProps> = ({
   progressInterval,
   onSeek,
   initialTime,
+  src,
 }) => {
   const [maxTime, setMaxTime] = useState<number>(initialTime || 0);
   const playerRef = useRef<ReactPlayer>(null);
@@ -54,7 +56,7 @@ export const VideoPlayer: FC<VideoPlayerProps> = ({
       onProgress={onProgressHandler}
       progressInterval={progressInterval}
       onSeek={onSeek}
-      url="https://www.youtube.com/watch?v=u31qwQUeGuM"
+      url={src}
       playIcon={<TvMinimalPlay />}
       controls
     />
