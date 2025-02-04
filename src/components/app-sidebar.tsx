@@ -1,4 +1,4 @@
-import { Webhook, BookText, ArrowRightLeft, GitPullRequestCreateArrow, TvMinimalPlay } from 'lucide-react';
+import { Webhook, BookText, ArrowRightLeft, GitPullRequestCreateArrow, TvMinimalPlay, Video } from 'lucide-react';
 import {
   Sidebar,
   SidebarContent,
@@ -37,6 +37,11 @@ const items = [
     title: 'Player',
     url: '/player',
     icon: TvMinimalPlay,
+  },
+  {
+    title: 'Recorder',
+    url: '/recorder',
+    icon: Video,
   },
 ];
 

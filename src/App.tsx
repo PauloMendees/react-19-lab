@@ -6,6 +6,7 @@ import { UseTransitionPage } from './pages/use-transition';
 import { UseFormStatusPage } from './pages/use-form-status';
 import { UseOptimisticPage } from './pages/use-optimistic';
 import { ReactPlayerPage } from './pages/react-player';
+import { RecorderPage } from './pages/recorder';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/use-form-status" element={<UseFormStatusPage />} />
             <Route path="/use-optimistic" element={<UseOptimisticPage />} />
             <Route path="/player" element={<ReactPlayerPage />} />
+            <Route path="/recorder" element={<RecorderPage />} />
           </Routes>
         </AppLayout>
       </BrowserRouter>
