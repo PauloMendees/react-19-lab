@@ -59,6 +59,8 @@ export const RecorderProvider: FC<PropsWithChildren> = ({ children }) => {
 
       const blob = new Blob(chunks);
 
+      // TODO: Do something to send direct to cloudfare
+
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
