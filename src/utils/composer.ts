@@ -1,4 +1,4 @@
-export const CAMERA_WIDTH = 340;
+export const CAMERA_WIDTH = 380;
 export const CAMERA_HEIGHT = 280;
 export const CAMERA_BORDER_RADIUS = 8;
 export const CAMERA_MARGIN_RIGHT = 0;

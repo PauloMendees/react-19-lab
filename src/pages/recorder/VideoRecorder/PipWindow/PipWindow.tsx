@@ -42,7 +42,9 @@ export const PipWindow: FC<PipWindowProps> = ({ pipWindow }) => {
         </button>
       ) : (
         <div className="px-4 absolute bottom-4 w-full flex items-center justify-between">
-          <span>{formatDuration(stopWatch.elapsed)}</span>
+          <div className="px-2 py-2 bg-black rounded-md">
+            <span className="text-white ">{formatDuration(stopWatch.elapsed)}</span>
+          </div>
           <Button
             size="icon"
             onClick={() => {

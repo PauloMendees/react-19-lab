@@ -29,7 +29,7 @@ export const VideoPreview = () => {
     <div className="relative w-full h-auto">
       {screenshareStream || layout === 'camera' ? (
         <video
-          className={cn('max-w-full h-auto w-full max-h-[640px]', layout === 'camera' ? 'scale-x-[-1]' : '')}
+          className={cn('max-w-full h-auto w-full max-h-[520px]', layout === 'camera' ? 'scale-x-[-1]' : '')}
           ref={layout === 'camera' ? updateCameraSource : updateScreenshareSource}
           autoPlay
           playsInline
